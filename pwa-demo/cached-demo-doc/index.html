@@ -1,0 +1,41 @@
+<!-- Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Caching Assets Demo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cache Storage</h1>
+      <p class="instructions">
+        Check within your browser developer tools cache storage contents. Open
+        this code sample in a
+        <a href="https://learn-pwa-caching-assets.glitch.me/" target="_blank"
+          >new window</a
+        >.
+      </p>
+      <label
+        >Cache name
+        <input
+          id="cacheName"
+          placeholder="Enter a cache name"
+          value="Learn-PWA"
+        />
+      </label>
+      <section class="toolbar">
+        <button id="single">Single File Cache</button>
+        <button id="multiple">Multiple Files Cache</button>
+        <button id="delete">Delete Cache</button>
+      </section>
+
+      <output></output>
+    </div>
+  </body>
+</html>

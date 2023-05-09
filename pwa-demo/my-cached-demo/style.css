@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Opensans';
+  font-style: normal;
+  src: local('Opensans'), url('./fonts/OpenSans-VariableFont_wdth,wght.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Opensans', sans-serif;
+}
+
+button {
+  height: 40px;
+  min-width: 120px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 20px 0;
+}
