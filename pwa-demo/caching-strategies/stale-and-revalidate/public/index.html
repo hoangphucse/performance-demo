@@ -1,0 +1,38 @@
+<!-- Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Serving Assets Demo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stale While Revalidate</h1>
+      <p class="instructions">
+        This app should work offline. Try to disconnect your network or use
+        DevTools to simulate offline and reload the page, it should still work.
+        Shift-Reload shouldn't load the page while offline.
+      </p>
+      <p class="instructions">
+        The service worker we register uses a stale-while-revalidate pattern.
+        Every time you reload, color.json is loaded from the cache but also
+        updated from the server with a new color that is randomly changing with
+        a Node.js script. You will have to reload to see the new cached CSS
+        color in action; you can also open DevTools and check the contents of
+        the file.
+      </p>
+      <section class="toolbar">
+        <button id="reload">Reload this Page</button>
+        <button id="check">Check Cached Color</button>
+      </section>
+      <div id="box"></div>
+      <output></output>
+    </div>
+  </body>
+</html>

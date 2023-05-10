@@ -1,0 +1,21 @@
+{
+  "name": "stale-and-revalidate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "fastify": "^3.24.1",
+    "fastify-formbody": "^5.2.0",
+    "fastify-static": "^4.5.0",
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.22",
+    "point-of-view": "^4.16.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
